@@ -1,0 +1,78 @@
+.header {
+	text-align: center;
+}
+
+#profile-picture {
+    width: 100px; // These are your circle dimensions
+    height: 100px;
+    border-radius: 50%;
+    background-repeat: no-repeat; 
+    background-position: center center; // Center image in the circle
+    background-size: cover;
+    position: relative;
+    z-index: 5;
+}
+div > img {
+	display: block;	
+	margin-left: auto;
+	margin-right: auto;}
+
+.jumbotron {
+    background-image: url(./chicago-cityscape.jpg);
+    background-size: cover;
+    height: 100%;
+    margin-bottom: 0;
+    padding: 0px 70px 0 70px;
+    position: relative;
+
+}
+
+
+.content-wrapper {
+	position: absolute;
+    top: 160;
+    bottom: 30;
+    left: 30;
+    right: 30;
+    background: rgba(230, 230, 230, 0.85);
+    border-radius: 25px;
+
+}
+
+div.projects {
+	margin-top: 100;
+	text-align: center;
+}
+
+div .project-wrapper {
+	display: inline-block;
+	width: 375px;
+	height: 280px;
+	text-align: center;
+}
+
+.projects img {
+	height: 150px;
+	width: 285px;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 30px;
+}
+
+.project-description p {
+	font-size: 13px;
+}
+
+footer {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 20px;
+}
+
+#footer {
+    font-size: 12px;
+    bottom: 0;
+	
+}
