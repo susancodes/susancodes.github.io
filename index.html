@@ -1,9 +1,15 @@
 <html>
 
 <head>
+    <!-- jquery -->
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <!-- css and bootstrap -->
     <link rel="stylesheet"
           href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.css"/>
     <link rel="stylesheet" href="./static/style.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
     <title>Susan Codes</title>
 </head>
 
@@ -21,27 +27,63 @@
     </div>
 
     <div class="content-wrapper">
-<!--       <div class="about-me"> 
 
-      </div> -->
+      <!-- nav tabs -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+        <li role="presentation"><a href="#projects" aria-controls="projects" role="tab" data-toggle="tab">Projects</a></li>
+        <li role="presentation"><a href="#hackbright" aria-controls="hackbright" role="tab" data-toggle="tab">Hackbright</a></li>
+<!--         <li role="presentation"><a href="#other" aria-controls="other" role="tab" data-toggle="tab">Other</a></li> -->
+      </ul>
 
-      <div class="projects">
-        <h3>My Projects</h3>
-        <div class="project-wrapper">
-          <a href="https://yourbff.herokuapp.com/" target="_blank"><img src="./static/Your-BFF.png"></img></a>
-          <div class="project-description">
-            <h4>Your BFF </h4>
-            <p>Your Budget Flight Finder encourages travel by only showing you roundtrip flights that are within your budget. Returns nearby campsites if budget cannot afford flights.</p>
-          </div>
-        </div> <!-- closing for project wrapper -->
-        <div class="project-wrapper">
-          <img src="./static/talkpay.png"></img>
-          <div class="project-description">
-            <h4>TalkPay</h4>
-            <p>Finalist at DevelopHER Hackday 2015 - TalkPay provides a place to quickly gauge where your current pay or offer stands compared to the average pay for men and women for that position.</p>
-        </div><!-- closing for project wrapper -->
-      </div> <!-- closing for projects -->
+      <!-- Tab panes -->
+      <div class="tab-content">
 
+        <div class="projects tab-pane fade in active" role="tabpanel" id="home">
+          <h3>About Me</h3>
+          <br>
+          <p>Born in <a href="https://en.wikipedia.org/wiki/Myanmar">Myanmar</a>, but moved to San Francisco when I was 9. I love the city lights and that there is always something new to discover at every hill and valley of the city. It's not hard to imagine why people leave their hearts in San Francisco. It sure has mine.</p>
+          <p>I have a bachelor's in neurobiology, physiology, and behavior from UC Davis.(Go Aggies!) Recently graduated from <a href="www.hackbrightacademy.com">Hackbright Academy</a>, a highly-competitive software engineering program for women. I enjoy figuring out how things work and love DIY projects so I'm psyched about knowing how to code! My favorite thing about programming is seeing how back-end and front-end interact. It's exciting to see a beautifully structured database but equally important that it has a elegant UI to get noticed.</p>
+          <p>If you would like to explore the city and get boba/coffee and talk code, please reach out to me!</p>
+        </div> <!-- closing for home div -->
+
+        <div class="projects tab-pane fade" role="tabpanel" id="projects">
+          <h3>My Projects</h3>
+          <div class="project-wrapper">
+            <a href="https://yourbff.herokuapp.com/" target="_blank"><img src="./static/Your-BFF.png"></img></a>
+            <div class="project-description">
+              <h4>Your BFF </h4>
+              <p>Your Budget Flight Finder encourages travel by only showing you roundtrip flights that are within your budget. Returns nearby campsites if budget cannot afford flights.</p>
+            </div> <!-- closing for project description -->
+          </div> <!-- closing for project wrapper -->
+
+          <div class="project-wrapper">
+            <img src="./static/talkpay.png"></img>
+            <div class="project-description">
+              <h4>TalkPay</h4>
+              <p>Finalist at DevelopHER Hackday 2015 - TalkPay provides a place to quickly gauge where your current pay or offer stands compared to the average pay for men and women for that position.</p>
+            </div> <!-- closing for project description -->
+          </div><!-- closing for project wrapper -->
+
+<!--           <div class="project-wrapper">
+            <a href="www.bilcorinc.com"><img src="./static/talkpay.png"></img></a>
+            <div class="project-description">
+              <h4>Bilcor, Inc.</h4>
+              <p>Static website for my previous employer, Bilcor, a fire alarm company based in San Francisco.</p>
+          </div> -->
+          <!-- closing for project wrapper  -->         
+        </div> <!-- closing for projects -->
+
+        <div class="projects tab-pane fade" role="tabpanel" id="hackbright">
+          <h3>Hackbright</h3>
+          <p>The full-time fellowship is a 12-week long program for women to learn web development. The first five weeks is dedicated to learning the foundation and has a structured lecture and lab schedule. Then the second five weeks are dedicated to working on a personal project and building a webapp from scratch. The last two weeks are for career services.</p>
+          <p>Here is the full <a href="https://hackbrightacademy.com/content/uploads/2014/11/FellowshipProgramSyllabus.pdf">syllabus</a>.</p>
+        </div> <!-- closing for home div -->
+
+<!--         <div class="projects tab-pane fade" role="tabpanel" id="other">
+        </div>  --><!-- closing for home div -->
+
+      </div>
 
     </div> <!-- closing for content-wrapper -->
   </div> <!-- closing for container-fluid jumbotron -->
@@ -51,6 +93,15 @@
     </footer>
 
 </div> <!-- closing for site-wrapper -->
+
+<script type="text/javascript">
+
+$('#home').tab('show');
+$('#projects').tab('show');
+$('#hackbright').tab('show');
+$('#other').tab('show');
+
+</script>
 
 </body>
 </html>
