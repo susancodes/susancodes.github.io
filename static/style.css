@@ -80,6 +80,11 @@ div .project-wrapper {
 	font-size: 13px;
 }
 
+#contact img {
+	width: 60px;
+	margin: 40px;
+}
+
 footer {
     color: #fff;
     position: absolute;
