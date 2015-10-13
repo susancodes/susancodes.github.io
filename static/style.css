@@ -80,8 +80,15 @@ div .project-wrapper {
 	font-size: 13px;
 }
 
-div .hackbright-container img {
+div .hackbright-container #hackbright-photos {
     margin: auto;
+    text-align: center;
+}
+
+div #hackbright-photos img {
+    width: 200px;
+    margin: 0px;
+    display: inline-block;
 }
 
 div#contact a img {
