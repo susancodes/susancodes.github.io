@@ -80,6 +80,10 @@ div .project-wrapper {
 	font-size: 13px;
 }
 
+div .hackbright-container img {
+    margin: auto;
+}
+
 div#contact a img {
 	width: 60px;
     height: 60px;
