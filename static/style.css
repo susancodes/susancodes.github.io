@@ -28,7 +28,6 @@ div > img {
 
 }
 
-
 .content-wrapper {
 	position: absolute;
     top: 140;
@@ -45,10 +44,20 @@ div > img {
 	margin: 20;
 }
 
+.tab-content {
+    position: absolute;
+    top: 40;
+    bottom: 5;
+    left: 5;
+    right: 5;
+    overflow-y: auto;
+}
+
 
 div.aboutme-container p {
 	font-size: 16px;
 	margin: 30px;
+    text-align: center;
 }
 
 h3 {
@@ -62,7 +71,7 @@ div.hackbright-container p {
 
 
 div.projects {
-	margin-top: 100;
+	margin-top: 50px;
 	text-align: center;
 }
 
