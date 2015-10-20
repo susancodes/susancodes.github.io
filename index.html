@@ -139,10 +139,29 @@
 
 <script type="text/javascript">
 
-$('#home').tab('show');
-$('#projects').tab('show');
-$('#hackbright').tab('show');
-$('#contact').tab('show');
+$('#home').on("click", function() {
+  $('#home').tab('show');
+  ga('send', 'event', 'Pages', 'view', 'Home & About Me');
+  
+})
+
+$('#projects').on("click", function() {
+  $('#projects').tab('show');
+  ga('send', 'event', 'Pages', 'view', 'Projects');
+  
+})
+
+$('#hackbright').on("click", function() {
+  $('#hackbright').tab('show');
+  ga('send', 'event', 'Pages', 'view', 'Hackbright');
+  
+})
+
+$('#contact').on("click", function() {
+  $('#home').tab('show');
+  ga('send', 'event', 'Pages', 'view', 'Contact');
+  
+})
 
 </script>
 
