@@ -80,6 +80,7 @@ div .project-wrapper {
 	width: 375px;
 	height: 280px;
 	text-align: center;
+    padding: 10px;
 }
 
 .projects img {
